@@ -1,4 +1,4 @@
-In order to increase hit rate one has to make more equal references per row. The more of the identical refs per row the less the miss rate is going to be. The opposite actions will conceive the respectively opposite result.
+In order to increase hit rate one has to make more equal references per row. The more of the identical refs per row the less the miss rate is going to be. Fewer equal references per row would result in a higher miss rate.
 
 [first test] test (N=20), hit-miss ratio increased:
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
