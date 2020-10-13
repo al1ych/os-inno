@@ -1,0 +1,62 @@
+In order to increase hit rate one has to make more equal references per row. The more of the identical refs per row the less the miss rate is going to be. The opposite actions will conceive the respectively opposite result.
+
+[first test] test (N=20), hit-miss ratio increased:
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+[second test] test (N=20), hit-miss ratio decreased:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+
+
+test from moodle:
+
+for 10 page frames
+hits: 10
+misses: 990
+hit/miss: 0.010101
+
+for 50 page frames
+hits: 51
+misses: 949
+hit/miss: 0.053741
+
+for 100 page frames
+hits: 93
+misses: 907
+hit/miss: 0.102536
+
+
+first test:
+
+for 10 page frames
+hits: 19
+misses: 1
+hit/miss: 19.000000
+
+for 50 page frames
+hits: 19
+misses: 1
+hit/miss: 19.000000
+
+for 100 page frames
+hits: 19
+misses: 1
+hit/miss: 19.000000
+
+
+second test:
+
+for 10 page frames
+hits: 0
+misses: 20
+hit/miss: 0.000000
+
+for 50 page frames
+hits: 0
+misses: 20
+hit/miss: 0.000000
+
+for 100 page frames
+hits: 0
+misses: 20
+hit/miss: 0.000000
+

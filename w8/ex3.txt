@@ -1,0 +1,16 @@
+Processes: 826 total, 4 running, 822 sleeping, 2233 threads                                                                                                                                        15:53:35
+Load Avg: 2.25, 2.34, 2.60  CPU usage: 25.9% user, 16.27% sys, 58.62% idle  SharedLibs: 172M resident, 42M data, 13M linkedit. MemRegions: 179725 total, 1417M resident, 59M private, 612M shared.
+PhysMem: 7849M used (3143M wired), 341M unused. VM: 3703G vsize, 1882M framework vsize, 31916824(0) swapins, 33749644(0) swapouts. Networks: packets: 86579563/98G in, 29395446/6736M out.
+Disks: 34630509/485G read, 44380981/408G written.
+
+PID    COMMAND      %CPU TIME     #TH   #WQ  #PORTS  MEM    PURG   CMPRS  PGRP  PPID  STATE    BOOSTS               %CPU_ME %CPU_OTHRS UID  FAULTS     COW     MSGSENT     MSGRECV     SYSBSD
+21333  Terminal     60.9 08:38.84 11/1  4    373     223M+  0B-    15M-   21333 1     running  *1[24324]            0.02081 2.31622    501  14866075+  707     1840525+    462100+     3807322+
+20703  top          19.2 00:01.82 1/1   0    25      9084K  0B     0B     20703 9396  running  *0[1]                0.00000 0.00000    0    9228+      90      542270+     271120+     28127+
+284    WindowServer 18.9 20:28:41 12    6    4243    1083M  22M+   109M   284   1     sleeping *0[1]                2.26161 0.02068    88   114839450+ 507443  972433721+  457781791+  497264479+
+0      kernel_task  9.1  16:30:35 263/4 0    0       486M+  0B     0B     0     0     running   0[0]                0.00000 0.00000    0    11178450   0       2573975301+ 2251410226+ 0
+186    hidd         5.1  01:45:50 5     3    256     3900K  0B     1668K- 186   1     sleeping *0[1]                0.05957 0.00000    261  7813455+   168     35992486+   23366883+   215768717+
+234    coreaudiod   2.3  05:14:47 14    3    537     9428K  0B     7188K  234   1     sleeping *0[1]                0.00000 0.09479    202  4629167+   280     349652215+  79052831+   386037841+
+386    trustd       1.3  03:24:42 5     4    159     10M    72K    3424K  386   1     sleeping *0[7377735+]         0.00000 1.24569    501  1202768    204     43672188+   11320968+   148971531+
+20702  ex2          0.7  00:00.09 1     0    10      135M+  0B     0B     20702 9396  sleeping *0[1]                0.00000 0.00000    501  34901+     90      45+         22+         107+
+97896  routined     0.3  00:06.57 3     2    123+    12M+   0B     9492K- 97896 1     sleeping  0[177]              0.00000 0.00000    501  137473+    330     7754+       2129+       77251+
+1      launchd      0.3  90:41.69 3     2    3168    23M    0B     11M    1     0     sleeping  0[0]                0.00000 0.21871    0    1245053    25784   156835844+  39708052+   157114217+

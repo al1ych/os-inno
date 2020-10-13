@@ -1,0 +1,3 @@
+8 KB => 13 bits for the offset
+the machine has 16 bit virtual addresses so 16 bits - 13 bits = 3 bits for the page number
+=> so the number of addressable pages is 2^3 = 8. answer: 8 entries. 

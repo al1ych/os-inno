@@ -1,0 +1,3 @@
+virtual address is the address within a process. there's a mapper utility that maps virtual addresses to physical when they're requested. so any process has some sort of private address space and within that space virtual addresses are used. also, no program's allowed to write or read from another program's virtual space.
+
+physical address is absolute address -- e.g. it's referring to the real physical memory address (in RAM).

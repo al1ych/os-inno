@@ -1,0 +1,20 @@
+  508  mkdir sem3
+  509  cd sem3
+  510  mkdir week1
+  511  cd week1
+  512  ls /usr/bin | grep gcc
+  513  ls /usr/bin | grep gcc | sort -r > ex1.txt
+  514  cat ex1.txt
+  515  ды
+  516  ls
+  517  mkdir some_dir
+  518  mv some_dir new_name
+  519  rm -R new_name
+  520  touch file.new
+  521  gedit file.new
+  522  rm file.new
+  523  cat ex1.txt
+  524  pwd
+  525  whoami
+  526  hostname
+  527  history > ex2.txt
