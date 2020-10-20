@@ -1,0 +1,21 @@
+$ mkdir week01
+$ cd week01
+$ vim file.txt
+$ cd ..
+$ ls
+_ex1.txt	_ex1_1.txt	_ex1_2.txt	ex1.txt		ex2.txt		week01
+$ ls -i week01/file.txt
+4350229292 week01/file.txt
+$ find . -inum 4350229292
+./week01/file.txt
+$ find ./week01 -inum 4350229292
+./week01/file.txt
+$ link ./week01/file.txt _ex2.txt
+$ vim _ex2.txt
+$ find ./week01 -inum 4350229292
+./week01/file.txt
+$ find . -inum 4350229292
+./week01/file.txt
+./_ex2.txt
+$ find . -inum 4350229292 -exec rm {} \;
+$ find . -inum 4350229292

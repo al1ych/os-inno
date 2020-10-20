@@ -1,0 +1,99 @@
+$ vim _ex3.txt
+$ ls -al
+total 24
+drwxr-xr-x   9 timurnugaev  staff  288 Oct 20 15:17 .
+drwxr-xr-x  13 timurnugaev  staff  416 Oct 20 14:32 ..
+-rw-r--r--   3 timurnugaev  staff   17 Oct 20 14:34 _ex1.txt
+-rw-r--r--   3 timurnugaev  staff   17 Oct 20 14:34 _ex1_1.txt
+-rw-r--r--   3 timurnugaev  staff   17 Oct 20 14:34 _ex1_2.txt
+-rw-r--r--   1 timurnugaev  staff   17 Oct 20 15:17 _ex3.txt
+-rw-r--r--   1 timurnugaev  staff   83 Oct 20 14:44 ex1.txt
+-rw-r--r--   1 timurnugaev  staff  479 Oct 20 15:17 ex2.txt
+drwxr-xr-x   2 timurnugaev  staff   64 Oct 20 15:13 week01
+$ chmod -x _ex3.txt     # remove execute permission for _ex3.txt
+$ ls -al
+total 24
+drwxr-xr-x   9 timurnugaev  staff  288 Oct 20 15:17 .
+drwxr-xr-x  13 timurnugaev  staff  416 Oct 20 14:32 ..
+-rw-r--r--   3 timurnugaev  staff   17 Oct 20 14:34 _ex1.txt
+-rw-r--r--   3 timurnugaev  staff   17 Oct 20 14:34 _ex1_1.txt
+-rw-r--r--   3 timurnugaev  staff   17 Oct 20 14:34 _ex1_2.txt
+-rw-r--r--   1 timurnugaev  staff   17 Oct 20 15:17 _ex3.txt
+-rw-r--r--   1 timurnugaev  staff   83 Oct 20 14:44 ex1.txt
+-rw-r--r--   1 timurnugaev  staff  479 Oct 20 15:17 ex2.txt
+drwxr-xr-x   2 timurnugaev  staff   64 Oct 20 15:13 week01
+$ chmod 666 _ex3.txt     # allow read/write only (no exec) for _ex3.txt
+$ ls -lah
+total 48
+drwxr-xr-x   9 timurnugaev  staff   288B Oct 20 15:17 .
+drwxr-xr-x  13 timurnugaev  staff   416B Oct 20 14:32 ..
+-rw-r--r--   3 timurnugaev  staff    17B Oct 20 14:34 _ex1.txt
+-rw-r--r--   3 timurnugaev  staff    17B Oct 20 14:34 _ex1_1.txt
+-rw-r--r--   3 timurnugaev  staff    17B Oct 20 14:34 _ex1_2.txt
+-rw-rw-rw-   1 timurnugaev  staff    17B Oct 20 15:17 _ex3.txt
+-rw-r--r--   1 timurnugaev  staff    83B Oct 20 14:44 ex1.txt
+-rw-r--r--   1 timurnugaev  staff   479B Oct 20 15:17 ex2.txt
+drwxr-xr-x   2 timurnugaev  staff    64B Oct 20 15:13 week01
+$ chmod 666 *      # allow ead/write permissions only (no execution perm) for all the files in the folder
+$ ls -al
+total 48
+drwxr-xr-x   9 timurnugaev  staff  288 Oct 20 15:17 .
+drwxr-xr-x  13 timurnugaev  staff  416 Oct 20 14:32 ..
+-rw-rw-rw-   3 timurnugaev  staff   17 Oct 20 14:34 _ex1.txt
+-rw-rw-rw-   3 timurnugaev  staff   17 Oct 20 14:34 _ex1_1.txt
+-rw-rw-rw-   3 timurnugaev  staff   17 Oct 20 14:34 _ex1_2.txt
+-rw-rw-rw-   1 timurnugaev  staff   17 Oct 20 15:17 _ex3.txt
+-rw-rw-rw-   1 timurnugaev  staff   83 Oct 20 14:44 ex1.txt
+-rw-rw-rw-   1 timurnugaev  staff  479 Oct 20 15:17 ex2.txt
+drw-rw-rw-   2 timurnugaev  staff   64 Oct 20 15:13 week01
+$ chmod 707 _ex3.txt      # all permissions to owner & other only  (& no perms for group)
+$ ls -al
+total 48
+drwxr-xr-x   9 timurnugaev  staff  288 Oct 20 15:17 .
+drwxr-xr-x  13 timurnugaev  staff  416 Oct 20 14:32 ..
+-rw-rw-rw-   3 timurnugaev  staff   17 Oct 20 14:34 _ex1.txt
+-rw-rw-rw-   3 timurnugaev  staff   17 Oct 20 14:34 _ex1_1.txt
+-rw-rw-rw-   3 timurnugaev  staff   17 Oct 20 14:34 _ex1_2.txt
+-rwx---rwx   1 timurnugaev  staff   17 Oct 20 15:17 _ex3.txt
+-rw-rw-rw-   1 timurnugaev  staff   83 Oct 20 14:44 ex1.txt
+-rw-rw-rw-   1 timurnugaev  staff  479 Oct 20 15:17 ex2.txt
+drw-rw-rw-   2 timurnugaev  staff   64 Oct 20 15:13 week01
+$ chmod 767 _ex3.txt     # all perms for owner & other  (& r/w perms for group only)
+$ ls -al
+total 48
+drwxr-xr-x   9 timurnugaev  staff  288 Oct 20 15:17 .
+drwxr-xr-x  13 timurnugaev  staff  416 Oct 20 14:32 ..
+-rw-rw-rw-   3 timurnugaev  staff   17 Oct 20 14:34 _ex1.txt
+-rw-rw-rw-   3 timurnugaev  staff   17 Oct 20 14:34 _ex1_1.txt
+-rw-rw-rw-   3 timurnugaev  staff   17 Oct 20 14:34 _ex1_2.txt
+-rwxrw-rwx   1 timurnugaev  staff   17 Oct 20 15:17 _ex3.txt
+-rw-rw-rw-   1 timurnugaev  staff   83 Oct 20 14:44 ex1.txt
+-rw-rw-rw-   1 timurnugaev  staff  479 Oct 20 15:17 ex2.txt
+drw-rw-rw-   2 timurnugaev  staff   64 Oct 20 15:13 week01
+$ chmod 777 _ex3.txt      # group permission is now equal to the user(owner) permission
+$ ls -al
+total 48
+drwxr-xr-x   9 timurnugaev  staff  288 Oct 20 15:17 .
+drwxr-xr-x  13 timurnugaev  staff  416 Oct 20 14:32 ..
+-rw-rw-rw-   3 timurnugaev  staff   17 Oct 20 14:34 _ex1.txt
+-rw-rw-rw-   3 timurnugaev  staff   17 Oct 20 14:34 _ex1_1.txt
+-rw-rw-rw-   3 timurnugaev  staff   17 Oct 20 14:34 _ex1_2.txt
+-rwxrwxrwx   1 timurnugaev  staff   17 Oct 20 15:17 _ex3.txt
+-rw-rw-rw-   1 timurnugaev  staff   83 Oct 20 14:44 ex1.txt
+-rw-rw-rw-   1 timurnugaev  staff  479 Oct 20 15:17 ex2.txt
+drw-rw-rw-   2 timurnugaev  staff   64 Oct 20 15:13 week01
+
+
+
+first digit signifies permissions for this file for Owner
+second digit is for Group
+and the third is for Other
+
+– What does 660 mean for ex3.txt?
+  read write and no execution permissions for User and Group but Other has no permissions at all
+
+– What does 775 mean for ex3.txt?
+  User has all the permissions (read write execute), same for Group. Other can only read and execute (5=101 in binary)
+
+– What does 777 mean for ex3.txt?
+  User, Group, Other have all the permissions (read write and execute)
