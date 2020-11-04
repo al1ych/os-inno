@@ -1,0 +1,41 @@
+$ time ./copy fileA fileB
+
+Before SYNC_O:
+
+BUF_SIZE=1024:
+real 0m0.002s
+user 0m0.001s
+sys 0m0.000s
+
+BUF_SIZE=65536
+real 0m0.002s
+user 0m0.001s
+sys 0m0.000s
+
+BUF_SIZE=2
+real 0m0.001s
+user 0m0.001s
+sys 0m0.000s
+
+
+After SYNC_O:
+
+BUF_SIZE=1024
+real 0m0.002s
+user 0m0.001s
+sys 0m0.000s
+
+BUF_SIZE=65536
+real 0m0.001s
+user 0m0.000s
+sys 0m0.001s
+
+BUF_SIZE=2
+real 0m0.002s
+user 0m0.000s
+sys 0m0.002s
+
+
+O_SYNC takes more time generally since it insures all the data was processed 
+The less size of buffer, the more running time we get because it gets filled more often
+But overall it's not that significant in this example as we can see from the stats
