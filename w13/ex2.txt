@@ -1,0 +1,10 @@
+recovery:
+we could use recovery on preemption if processes preempt resources safely
+
+we can use recovery on killing if there's no dependency on that process
+
+prevention:
+we use prevention if there is no circular wait no-preemption mutual exclusion and hold and wait
+
+avoidance:
+if we know how many resources we have beforehand, we can use the Deadlock Avoidance strategy
